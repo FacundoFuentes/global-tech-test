@@ -45,6 +45,7 @@ export class UserService implements IUserService {
     }
 
     const { id: _, ...restUpdateData } = updateData;
+    //El tipo void en TypeScript representa la ausencia de tipo. Se utiliza principalmente como tipo de retorno de funciones que no devuelven un valor.
     void _;
 
     this.users[userIndex] = { ...this.users[userIndex], ...restUpdateData };
