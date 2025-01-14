@@ -35,14 +35,8 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
-$ npm run start
-
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
 ## Test
@@ -50,12 +44,69 @@ $ npm run start:prod
 ```bash
 # unit tests
 $ npm run test
+```
 
-# e2e tests
-$ npm run test:e2e
+## Endpoints
 
-# test coverage
-$ npm run test:cov
+```bash
+# POST /user - Create a new user
+```
+
+```json
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "age": 30,
+  "profile": {
+    "id": "12345",
+    "code": "PROF123",
+    "profileName": "Admin"
+  }
+}
+```
+
+```bash
+# GET /user - Get all users
+```
+
+```bash
+# GET /user/:id - Get user by id
+```
+
+```bash
+# PUT /user/:id - Update user by id
+```
+
+```json
+{
+  "name": "John Doe Edit",
+  "email": "john.doe@example.com",
+  "age": 30,
+  "profile": {
+    "id": "12345",
+    "code": "PROF123",
+    "profileName": "Admin"
+  }
+}
+```
+
+```bash
+# DELETE /user/:id - Delete user by id
+```
+
+## Test Results
+
+```bash
+ PASS  src/test/users.service.spec.ts
+  UsersService
+    √ should create a user (2 ms)
+    √ should throw an error if email is not unique (6 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        1.973 s
+Ran all test suites.
 ```
 
 ## Support
@@ -71,3 +122,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+```
+
+```
