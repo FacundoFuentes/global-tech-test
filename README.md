@@ -48,11 +48,8 @@ $ npm run test
 
 ## Endpoints
 
-```bash
-# POST /user - Create a new user
-```
-
 ```json
+# POST /user - Create a new user
 {
   "name": "John Doe",
   "email": "john.doe@example.com",
@@ -73,11 +70,8 @@ $ npm run test
 # GET /user/:id - Get user by id
 ```
 
-```bash
-# PUT /user/:id - Update user by id
-```
-
 ```json
+# PUT /user/:id - Update user by id
 {
   "name": "John Doe Edit",
   "email": "john.doe@example.com",
